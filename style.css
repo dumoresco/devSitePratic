@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap');
+
+/* 1000px mobile */
+/* 1110px ajust */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration: none;   
+}
+header{
+    background-color: #1F1F1F;
+    height: 100vh;
+}
+.container{
+    max-width: 1200px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+.navBar{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.logo{
+    width: 100px;
+    height: auto;
+}
+.menu li{
+    display: inline-block;
+}
+.menu li a{
+    font-weight: bolder;
+    padding: 5px 20px;
+    color: #B1B0B0;
+}
+.menu li a:hover{
+    color: #E82B47;
+}
+.contatoBtn, .btnOrcamento{
+    background-color: #E82B47;
+    padding: 5px 20px;
+    border-radius: 13px;
+    color: #1F1F1F;
+    font-weight: bolder;
+}
+.contatoBtn:hover{
+    background-color: rgba(232, 43, 71, 0.781);
+}
+.hero{
+    text-align: center;
+    padding-top: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+.hero h1{
+    font-size: 800%;
+    font-weight: bolder;
+    color: #B1B0B0;
+    letter-spacing: -4px;
+    line-height: 100px;
+}
+.hero h2{
+    font-size: 600%;
+    color: #B1B0B0;
+}
+.hero span{
+    color: #E82B47;
+}
+.hero h3{
+    color: #B1B0B0;
+    font-weight: normal;
+    line-height: 50px;
+    padding-bottom: 20px;
+}
+.btnOrcamento{
+    padding: 10px 80px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+/* Sobre */
+.pageAbout{
+    background-color: #1F1F1F;
+    height: 100vh;
+}
+.fotoAbout{
+    width: 50%;
+    height: 100vh;
+    float: left;
+    background-image: linear-gradient( rgba(232, 43, 71, 0.397), rgba(232, 43, 71, 0.37)),url(20140610wiki1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+}
+.textAbout{
+    float: right;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    padding-top: 0;
+    height: 100%;
+}
+ .title{
+    font-size: 500%;
+    color: #B1B0B0;
+    text-decoration: underline #E82B47;
+    padding-bottom: 1px;
+    margin-top:0px;
+}
+.subText{
+    color: #E82B47;
+    font-weight: bold;
+    text-align: justify;
+    font-size: 150%;
+    margin-top: 100px;
+}
+.text{
+    color: #B1B0B0;
+    font-size: 150%;
+    font-weight: 600;
+    margin-top: 40px;
+    text-align: justify;
+}
+/* Serviços */
+.servicesPage{
+    width: 100%;
+    height: 100vh;
+    background-color: #1F1F1F;
+    color: #B1B0B0;
+}
+.title{
+    text-align: center;
+    padding-top: 100px;
+}
+.servicesList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.services{
+    max-width: 230px;
+    text-align: center;
+    margin: 100px;
+    margin-top: 5%;
+}
+.dev{
+    max-width: 300px;
+}
+.subtitle{
+    color: #E82B47;
+    font-size: 250%;
+}
+.servicesTxt{
+    font-weight: 600;
+}
+
+/* Projetos */
+
+.projetosPage{
+    width: 100%;
+    height: 100%;
+    background-color: #1F1F1F;
+}
+.miniatures{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}
+.squareDark{
+    background-color: #1F1F1F;
+}
+.squareWhite{
+    background-color: #B1B0B0;
+}
+
+/* Planos */
+
+.planosPage{
+    background-color: #1F1F1F;
+    height: 100vh;
+}
+.listPlanos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.plano{
+    width: 400px;
+    height: 450px;
+}
+.plano ul{
+    padding: 10px;
+    padding-top: 20px;
+}
+.plano li{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 120%;
+    color: #B1B0B0;
+}
+.plano li::before{
+    content: '•';
+    color: #E82B47;
+    padding: 4px;
+}
+.nome{
+    font-size: 200%;
+    text-align: center;
+    padding: 10px;
+}
+.nomeNormal{
+    color: #B1B0B0;
+    border-bottom: 3px solid #B1B0B0;
+}
+.nomePremium{
+    color: #E82B47;
+    border-bottom: 3px solid #E82B47;
+}
+.btnEscolher{
+    position: absolute;
+    margin-top: 13%;
+    width: 400px;
+    height: 50px;
+    font-size: 140%;
+    border: 1px solid #B1B0B0;
+    color: #B1B0B0;
+    background: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.btnEscolher:hover{
+    background-color: #E82B47;
+    color: #1F1F1F;
+    border: none;
+}
+
+/* CONTATO */
+
+.contatoPage{
+    height: 98vh;
+    background-color: #B1B0B0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contatoPage .title{
+    color: #1F1F1F;
+}
+.recado{
+    width: 40%;
+    float: left;
+}
+.recado p{
+    text-align: center;
+    color: #1F1F1F;
+    font-size: 140%;
+}
+.form{
+    margin-top: 100px;
+    padding: 40px;
+    width: 60%;
+    float: right;
+    text-align: center;
+}
+input, .mensagem{
+    border: none;
+    background: #1F1F1F;
+    color: #B1B0B0;
+    font-weight: bolder;
+    font-size: 130%;
+    padding: 9px 20px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.email{
+    width: 92%;
+}
+.mensagem{
+    width: 92%;
+    height: 400px;
+}
+.btnEnviar{
+    padding: 10px;
+    font-weight: 800;
+    background: #E82B47;
+    color: #1F1F1F;
+    font-size: 150%;
+    width: 92%;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+}
+.footer{
+    height: 13vh;
+    background-color: #1F1F1F;
+    color: #B1B0B0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media(max-width:1300px){
+    .services{
+        max-width: 150px;
+    }
+    .subtitle{
+        font-size: 150%;
+    }
+    .services img{
+        max-width: 150px;
+    }
+    .contatoPage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+    }
+    .recado, .form{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 100%;
+    }
+    .form{
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    input{
+        width: 100%;
+    }
+    .name,.assunto,.email,.mensagem,.btnEnviar{
+        width: 80%;
+    }
+    .recado p{
+        font-size: 140%;
+    }
+}
+@media(max-width:1125px){
+    .text{
+        font-size:120% ;
+    }
+}
+@media(max-width:865px){
+    .pageAbout{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+    .fotoAbout{
+        width: 100%;
+        height: 600px;
+        background-image: linear-gradient( rgba(232, 43, 71, 0.397), rgba(232, 43, 71, 0.37)),url(20140610wiki1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: transparent;
+    }
+    .textAbout{
+        width: 90%;
+    }
+    .servicesPage{
+        height: 100%;
+    }
+   .servicesList{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .services{
+        max-width: 100%;
+    }
+    .planosPage{
+        height: 100%;
+    }
+    .plano{
+        max-width: 300px;
+    }
+    .plano .btnEscolher{
+        max-width: 300px;
+    }
+    .listPlanos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .hero h1{
+        font-size: 300%;
+    }
+    .hero h2{
+        font-size: 260%;
+    }
+    .footer{
+        height: 100%;
+        padding: 40px;
+    }
+}
